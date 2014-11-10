@@ -1,0 +1,59 @@
+﻿<Controls:MetroWindow  x:Class="StargateArmALauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="Stargate ArmA Launcher" Height="500" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="Resources/stargate-arma.ico" Loaded="MetroWindow_Loaded">
+
+    <Window.Resources>
+        <BitmapImage x:Key="logoicon" UriSource="Resources/logo-icon.png" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" />
+        <Style BasedOn="{StaticResource MetroTabItem}" TargetType="{x:Type TabItem}">
+            <Setter Property="Controls:ControlsHelper.HeaderFontSize" Value="16"></Setter>
+        </Style>
+    </Window.Resources>
+
+    <Controls:MetroWindow.RightWindowCommands>
+        <Controls:WindowCommands>
+            <Button Content="goto website" />
+            <Button Content="about" />
+        </Controls:WindowCommands>
+    </Controls:MetroWindow.RightWindowCommands>
+
+
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="451" Margin="10,10,0,0" VerticalAlignment="Top" Width="774">
+            <TabItem Header="Main" VerticalAlignment="Bottom">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="Main server status:" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
+                    <Label Content="State:" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_main_serveronline" Content="online" HorizontalAlignment="Left" Margin="200,50,0,0" VerticalAlignment="Top"/>
+                    <Label Content="all updated" HorizontalAlignment="Left" Margin="200,75,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="textbox_main_infotext" TextWrapping="Wrap" Text="infobox" Margin="400,20,10,20" IsEnabled="False"/>
+                    <Button Content="Start Game" Click="Button_startgame_Click" HorizontalAlignment="Left" Margin="10,375,0,0" VerticalAlignment="Top" Width="100"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Updater">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="launcher version" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
+                    <Label Content="0.0.100" HorizontalAlignment="Left" Margin="200,50,0,0" VerticalAlignment="Top"/>
+                    <Label Content="latest launcher version:" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top"/>
+                    <Label Content="0.0.101" HorizontalAlignment="Left" Margin="200,75,0,0" VerticalAlignment="Top"/>
+                    <Label Content="installed mod version" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top"/>
+                    <Label Content="0.0.100" HorizontalAlignment="Left" Margin="200,120,0,0" VerticalAlignment="Top"/>
+                    <Label Content="latest stable build version:" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top"/>
+                    <Label Content="0.0.101" HorizontalAlignment="Left" Margin="200,145,0,0" VerticalAlignment="Top"/>
+                    <Label Content="latest dev build version:" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top"/>
+                    <Label Content="0.0.102" HorizontalAlignment="Left" Margin="200,170,0,0" VerticalAlignment="Top"/>
+                    <TextBox TextWrapping="Wrap" Text="changelog" Margin="400,20,10,60" IsEnabled="False"/>
+                    <ComboBox x:Name="combobox_branch" HorizontalAlignment="Left" Margin="128,223,0,0" VerticalAlignment="Top" Width="257"/>
+                    <Label Content="build" HorizontalAlignment="Left" Margin="73,223,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="combobox_dlserver" HorizontalAlignment="Left" Margin="129,271,0,0" VerticalAlignment="Top" Width="256"/>
+                    <Label Content="download-server" HorizontalAlignment="Left" Margin="12,271,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="button_updater_updateMod" Content="Update Mod" HorizontalAlignment="Left" Margin="285,321,0,0" VerticalAlignment="Top" Width="100"/>
+                    <Button x:Name="button_updater_updateLauncher" Content="Update Launcher" HorizontalAlignment="Left" Margin="12,321,0,0" VerticalAlignment="Top" Width="120"/>
+                    <ProgressBar HorizontalAlignment="Left" Margin="12,385,0,0" VerticalAlignment="Top" Width="748" Height="25"/>
+                    <Label Content="downloading sga_core.pbo... (2/12)" HorizontalAlignment="Left" Margin="10,365,0,0" VerticalAlignment="Top" Width="400" FontSize="11"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Controls:MetroWindow>

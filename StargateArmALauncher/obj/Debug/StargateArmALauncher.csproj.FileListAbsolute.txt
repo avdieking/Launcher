@@ -1,0 +1,17 @@
+D:\Programmierung\Stargate ArmA\Launcher\StargateArmALauncher\StargateArmALauncher\bin\Debug\StargateArmALauncher.exe.config
+D:\Programmierung\Stargate ArmA\Launcher\StargateArmALauncher\StargateArmALauncher\obj\Debug\StargateArmALauncher.csprojResolveAssemblyReference.cache
+D:\Programmierung\Stargate ArmA\Launcher\StargateArmALauncher\StargateArmALauncher\obj\Debug\App.g.cs
+D:\Programmierung\Stargate ArmA\Launcher\StargateArmALauncher\StargateArmALauncher\obj\Debug\StargateArmALauncher_MarkupCompile.cache
+D:\Programmierung\Stargate ArmA\Launcher\StargateArmALauncher\StargateArmALauncher\obj\Debug\MainWindow.baml
+D:\Programmierung\Stargate ArmA\Launcher\StargateArmALauncher\StargateArmALauncher\obj\Debug\MainWindow.g.cs
+D:\Programmierung\Stargate ArmA\Launcher\StargateArmALauncher\StargateArmALauncher\obj\Debug\StargateArmALauncher.g.resources
+D:\Programmierung\Stargate ArmA\Launcher\StargateArmALauncher\StargateArmALauncher\obj\Debug\StargateArmALauncher.Properties.Resources.resources
+D:\Programmierung\Stargate ArmA\Launcher\StargateArmALauncher\StargateArmALauncher\obj\Debug\StargateArmALauncher.csproj.GenerateResource.Cache
+D:\Programmierung\Stargate ArmA\Launcher\StargateArmALauncher\StargateArmALauncher\obj\Debug\App.baml
+D:\Programmierung\Stargate ArmA\Launcher\StargateArmALauncher\StargateArmALauncher\bin\Debug\StargateArmALauncher.exe
+D:\Programmierung\Stargate ArmA\Launcher\StargateArmALauncher\StargateArmALauncher\bin\Debug\StargateArmALauncher.pdb
+D:\Programmierung\Stargate ArmA\Launcher\StargateArmALauncher\StargateArmALauncher\bin\Debug\MahApps.Metro.dll
+D:\Programmierung\Stargate ArmA\Launcher\StargateArmALauncher\StargateArmALauncher\bin\Debug\System.Windows.Interactivity.dll
+D:\Programmierung\Stargate ArmA\Launcher\StargateArmALauncher\StargateArmALauncher\bin\Debug\MahApps.Metro.xml
+D:\Programmierung\Stargate ArmA\Launcher\StargateArmALauncher\StargateArmALauncher\obj\Debug\StargateArmALauncher.exe
+D:\Programmierung\Stargate ArmA\Launcher\StargateArmALauncher\StargateArmALauncher\obj\Debug\StargateArmALauncher.pdb
