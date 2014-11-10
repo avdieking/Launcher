@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server>
+	<config>
+		<launcher version="0.0.100" dl=""></launcher>
+		<infotext>Test 123</infotext>
+		<dlserver>
+			<server name="TDC Server (EU)" ip="http://stargate.tdc-clan.eu/launcher/dl"></server>
+			<server name="US Server 1" ip="htp://blabla.com"></server>
+		</dlserver>
+	</config>
+	<gameupdates>
+		<stable>
+			<version>0.0.100</version>
+			<files>
+				<file name="@Stargate\Addons\sga_core.pbo" md5="" dl=""></file>
+				<file name="@CBA_A3\Addons\cba_main.pbo" md5="" dl=""></file>
+			</files>
+		</stable>
+		<dev>
+			<version>0.0.110</version>
+			<files>
+				<file name="@Stargate\Addons\sga_core.pbo" md5="" dl=""></file>
+				<file name="@CBA_A3\Addons\cba_main.pbo" md5="" dl=""></file>
+			</files>
+		</dev>	
+	</gameupdates>
+</server>
