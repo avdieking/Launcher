@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -47,12 +47,14 @@ namespace StargateArmALauncher
     public partial class MainWindow : MetroWindow
     {
         public static String a3path;
+        public static String a3path2;
         public static String modpath;
         public static XmlDocument serverXMLreader = new XmlDocument();
         List<serverList> srvList = new List<serverList>();
         public static String mainServer = "http://stargate.tdc-clan.eu";
         Functions functions = new Functions();
         public bool dlServerOnline;
+        public bool installed;
         public static String srvLauncherVersion;
 
         public String infotext = "";
@@ -60,11 +62,25 @@ namespace StargateArmALauncher
         public MainWindow()
         {
             //Pfad
-            a3path = (String)Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\bohemia interactive studio\ArmA 3", "main", "");
+            installed = true;
+            a3path = (String)Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\bohemia interactive\ArmA 3", "main", "");
+            a3path2 = (String)Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\bohemia interactive studio\ArmA 3", "main", "");
             if (String.IsNullOrEmpty(a3path))
+            {
+                installed = false;
+            }
+            else if (String.IsNullOrEmpty(a3path2))
+            {
+                installed = false;
+            }
+            else if (!installed)
             {
                 MessageBox.Show("You dont have a valid ArmA 3 installation installed on your computer");
                 Environment.Exit(0);
+            }
+            if (!String.IsNullOrEmpty(a3path2))
+            {
+                a3path = a3path2;
             }
             modpath = a3path + "/StargateArmA";
 
